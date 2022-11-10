@@ -1,0 +1,29 @@
+.textoD{
+    background-color: blue;
+    margin-top: 0px;
+    width: 98.8vh;
+    margin-left: 50%;
+}
+.textoI{
+    background-color: blue;
+    width: 100vh;
+    margin-left: 0%;
+}
+.imagenD{
+    height: auto;
+    width: 97.5vh;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+.imagenI{
+    height: auto;
+    width: 99vh;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+app-footer{
+    background-color: aqua;
+    position: absolute;
+    width: 197vh;
+}
