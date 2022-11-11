@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { AcercadeComponent } from './screens/acercade/acercade.component';
 import { LoginComponent } from './screens/login/login.component';
 import { CambiarContrasenaComponent } from './screens/cambiar-contrasena/cambiar-contrasena.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './interceptors/token.interceptor';
+import { SolicitudesAdopcionComponent } from './components/solicitudes-adopcion/solicitudes-adopcion.component';
+import { MenuComponent } from './screens/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -21,16 +25,21 @@ import { CambiarContrasenaComponent } from './screens/cambiar-contrasena/cambiar
     FooterComponent,
     AcercadeComponent,
     LoginComponent,
-    CambiarContrasenaComponent
+    CambiarContrasenaComponent,
+    SolicitudesAdopcionComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

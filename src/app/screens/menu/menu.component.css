@@ -1,0 +1,163 @@
+.contenedor{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+}
+.menu{
+    height: 100%;
+    width: 20vmax;
+}
+.backmenu{
+    position: absolute;
+    height: 100%;
+    width: 20.5vmax;
+    left: 0px;
+    top: 1px;   
+}
+.logo{
+    position: absolute;
+    width: 8.25vmax;
+    height: 6.5vmax;
+    left: 5.9vmax;
+    top: 0.7vmax;
+}
+.linea{
+    position: absolute;
+    width: 79.59%;
+    height: 0vmax;
+    left: 20.35vmax;
+    margin-top: 4.4%;
+    border: 1px solid #023439;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 1.2vmax;
+
+    position: absolute;
+    width: 14.5vmax;
+    height: 15.2vmax;
+    left: 1.65vmax;
+    top: 10.6vmax;
+}
+a{
+    width: 11.8vmax;
+    height: 1.3vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vmax;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: #04f6e6;
+
+    text-decoration: none;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.aUsuario {
+    width: 11.8vmax;
+    height: 1.3vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1vmax;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    margin-left: 2.5vmax;
+
+    color: #01ABA8;
+
+    text-decoration: none;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 1.45vmax;
+    width: 14.6vmax;
+    height: 1.25vmax;
+
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.icono {
+    width: 1.3vmax;
+    height: 1.3vmax;
+    margin-left: 0.0vmax;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.iconAvatar {
+    position: absolute;
+    width: 3.3vmax;
+    height: 3.3vmax;
+    left: 86.65vmax;
+    right: 8.4%;
+    top: 0.65vmax;
+    bottom: 90vmax;
+}
+.avatar {
+    position: inherit;
+    width: 8.5vmax;
+    height: 2.45vmax;
+    margin-left: 66.09vmax;
+    margin-top: 1vmax;
+    border-radius: 360px;
+}
+.admin{
+    position: absolute;
+    height: 2.45vmax;
+    width: 5vmax;
+    margin-top: 0.1vmax;
+    margin-left: 4.5vmax;
+}
+.admin {
+    margin-top: 0.5vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.27vmax;
+    line-height: 1.47vmax;
+    cursor: pointer;
+
+
+    color: #000000;
+}
+
+.contenido{
+    position: absolute;
+    margin-top: 0vmax;
+    height: 100vh;
+    width: 79.7%;
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20.3vmax;
+}

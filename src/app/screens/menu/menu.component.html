@@ -1,0 +1,29 @@
+<div class="contenedor">
+    
+    <div class="menu">
+        <img src="../../../assets/images/back.jpg" class="backmenu">
+        <img src="../../../assets/images/logo.jpeg" class="logo">
+        <div *ngFor="let route of routes" class="lista">
+            <div *ngFor="let subRoutes of route.children">
+                <div class="frame">
+                    <img src='{{subRoutes.icon}}' class="icono">
+                    <a [routerLink]="[subRoutes.url]">{{subRoutes.label}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seccion">
+        
+        <div class="avatar" >
+            <img src="../../../assets/icons/usuario.png"  class="iconAvatar">
+            <div class="admin" >
+                <p class="usuario" (click)="logout()"> Admin</p>
+            </div>
+        </div>   
+        <hr class="linea">    
+        <div class="contenido">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    
+</div>
