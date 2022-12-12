@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
     this.authService.loginAdmin(this.email, this.password).subscribe(res => {
       if (res.intResponse === 200) {
         this.authService.setUserAdminSessionStorage(res.Result.admin);
+        localStorage.setItem('id', res.Result.admin.id.toString())
         //this.authService.setTokenLocalStorage(res.Result.token)
         this.router.navigate(['/menu'], {replaceUrl: true});
         //alert(JSON.stringify(this.authService.user,null,2))

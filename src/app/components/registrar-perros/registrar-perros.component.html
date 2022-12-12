@@ -1,0 +1,61 @@
+<div class="contenedor d-flex">
+    <h1>Registrar Perros</h1>
+    
+    <div class="borde"></div>
+    <div class="tabla">
+        <form action="">
+            <div class="row d-flex">
+                <label for="" class="etiqueta etiqueta3">Nombre</label>
+                <input type="text" class="texto" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" placeholder="Ingresa nombre del perrito">
+            </div>
+            <div class="row d-flex">
+                <label for="" class="etiqueta etiqueta3">Color</label>
+                <input type="text" class="texto" [(ngModel)]="color" [ngModelOptions]="{standalone: true}" placeholder="Ingresa color del perrito">
+            </div>
+            <div class="row">
+                <div class="col d-flex"> 
+                    <label for="correo" class="etiqueta">Talla </label>
+                    <select class="texto2 texto" [(ngModel)]="talla" [ngModelOptions]="{standalone: true}" name="" id="">
+                        <option value="chica">Chica</option>
+                        <option value="mediana">Mediana</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+                <div class="col d-flex">
+                    <label for="" class="etiqueta etiqueta2">Tamaño</label>
+                    <input type="number" [(ngModel)]="tam" [ngModelOptions]="{standalone: true}" class="texto2 texto" placeholder="Tamaño en cm">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex"> 
+                    <label for="correo" class="etiqueta">Perrera </label>
+                    <select class="texto2 texto" [(ngModel)]="perrera" [ngModelOptions]="{standalone: true}" name="" id="">
+                        <option value="1">Perrera Municipal</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                </div>
+            
+            </div>
+            <div class="row">
+                <label for="" class="etiqueta etiqueta3">Descrpcion</label>
+                <input type="text" class="texto" [(ngModel)]="descripcion" [ngModelOptions]="{standalone: true}" placeholder="Descripcion del perro">
+            </div>
+            
+            <div class="row">
+                <label class="etiqueta" for="">Foto</label>
+                <div class="custom-file-button">
+                    <input type="file" class=" texto" (change)="handleUpload($event)">
+                </div>
+            </div>
+            <img [src]="foto" alt="">
+        </form>
+    </div>
+    <div class="abajo">
+        <div class="botones d-flex" >
+            <div >
+                <button class="agregar" (click)="agregar()">Agregar</button>
+            </div>
+        </div>
+    </div>   
+</div>

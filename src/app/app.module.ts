@@ -16,6 +16,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './interceptors/token.interceptor';
 import { SolicitudesAdopcionComponent } from './components/solicitudes-adopcion/solicitudes-adopcion.component';
 import { MenuComponent } from './screens/menu/menu.component';
+import { RegistrarPerrosComponent } from './components/registrar-perros/registrar-perros.component';
+import { SolicitudesDePerrerasComponent } from './components/solicitudes-de-perreras/solicitudes-de-perreras.component';
+import { ReportesDePerrosComponent } from './components/reportes-de-perros/reportes-de-perros.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { ArchivoDePerrosComponent } from './components/archivo-de-perros/archivo-de-perros.component';
+import { ContactoComponent } from './screens/contacto/contacto.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +35,13 @@ import { MenuComponent } from './screens/menu/menu.component';
     LoginComponent,
     CambiarContrasenaComponent,
     SolicitudesAdopcionComponent,
-    MenuComponent
+    MenuComponent,
+    RegistrarPerrosComponent,
+    SolicitudesDePerrerasComponent,
+    ReportesDePerrosComponent,
+    UsuariosComponent,
+    ArchivoDePerrosComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +49,9 @@ import { MenuComponent } from './screens/menu/menu.component';
     NgbModule,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, 
+    ModalModule.forRoot()
+    
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },

@@ -1,24 +1,27 @@
 .contenedor{
-    height: 100vh;
-    width: 100vh;
+    height: 98.3vh;
+    width: 100vmax;
     display: flex;
 }
 .menu{
     height: 100%;
     width: 20vmax;
+    
 }
 .backmenu{
     position: absolute;
     height: 100%;
     width: 20.5vmax;
     left: 0px;
-    top: 1px;   
+    top: 1px; 
+    background: rgb(0,216,240);
+    background: linear-gradient(0deg, rgba(0,216,240,0.29315476190476186) 100%, rgba(250,250,250,1) 100%, rgba(0,212,255,1) 100%);
 }
 .logo{
     position: absolute;
-    width: 8.25vmax;
-    height: 6.5vmax;
-    left: 5.9vmax;
+    width: 12.25vmax;
+    height: 10.5vmax;
+    left: 3vmax;
     top: 0.7vmax;
 }
 .linea{
@@ -55,7 +58,7 @@ a{
     display: flex;
     align-items: center;
 
-    color: #04f6e6;
+    color: black;
 
     text-decoration: none;
     /* Inside auto layout */
@@ -153,11 +156,23 @@ a{
 .contenido{
     position: absolute;
     margin-top: 0vmax;
-    height: 100vh;
+    height: 100%;
     width: 79.7%;
 }
 .seccion{
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    margin-left: 20.3vmax;
+    margin-left: 4.6vmax;
+    margin-right: 0vmax;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+.menuHover{
+    display: none;
+    position: absolute;
+    left: 6vh;
+    top: 2vh;
 }

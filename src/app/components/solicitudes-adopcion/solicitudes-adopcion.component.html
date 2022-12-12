@@ -1,1 +1,16 @@
-<p>solicitudes-adopcion works!</p>
+<h1>Solicitudes de adopcion</h1>
+<div class="container">
+    <div class="cards">
+        <div class="card" *ngFor="let carta of cards" style="width: 25rem;">
+            <img class="card-img-top" [src]="carta.img" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{carta.nombrePerro}}</h5>
+              <p class="card-text">Solicitante: <br> <small>{{carta.nombreUsuario}}</small></p>
+              <p class="card-text">Fecha: <small>{{carta.fecha}}</small></p>
+              <a href="#">Detalles de usuario</a><br>
+              <a href="#" class="btn btn-primary">Aprobar</a>
+              <a href="#" class="btn btn-primary">Rechazar</a>
+            </div>
+        </div>
+    </div>
+</div>

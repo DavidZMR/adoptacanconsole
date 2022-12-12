@@ -1,8 +1,8 @@
 <div class="contenedor">
     
     <div class="menu">
-        <img src="../../../assets/images/back.jpg" class="backmenu">
-        <img src="../../../assets/images/logo.jpeg" class="logo">
+        <img  class="backmenu">
+        <img src="../../../assets/images/Rene logoMesa de trabajo 2.png" class="logo">
         <div *ngFor="let route of routes" class="lista">
             <div *ngFor="let subRoutes of route.children">
                 <div class="frame">
@@ -10,17 +10,24 @@
                     <a [routerLink]="[subRoutes.url]">{{subRoutes.label}}</a>
                 </div>
             </div>
+            
         </div>
+        
+    </div>
+    <div class="mostrar">
+        <img src="../../../assets/icons/Hamburguer menu.png" class="menuHover">
     </div>
     <div class="seccion">
-        
+        <hr class="linea">
+        <div class="titulo">
+            {{titulo}}
+        </div>
         <div class="avatar" >
             <img src="../../../assets/icons/usuario.png"  class="iconAvatar">
             <div class="admin" >
                 <p class="usuario" (click)="logout()"> Admin</p>
             </div>
         </div>   
-        <hr class="linea">    
         <div class="contenido">
             <router-outlet></router-outlet>
         </div>

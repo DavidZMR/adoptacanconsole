@@ -1,3 +1,53 @@
+html{
+    background-color:#f8f9fd;
+}
+/*SLIDER*/
+.slider{
+    position: relative;
+    z-index: 1;
+}
+/*SLIDERS*/
+.singleSlider{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.singleSlider.slider1{background: transparent;}
+.singleSlider.slider2{background: transparent;}
+.singleSlider.slider3{background: transparent;}
+
+/*DIV DEL SLIDER*/
+.groupSlider{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contSlider{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+}
+.contSlider.imag{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 10px;
+}
+/*TEXTO DE LOS SLIDERS*/
+.textSlider h5{
+    font-size: 24px;
+    color: #998d80;
+    font-weight: 400;
+  }
+.textSlider h2{
+    font-size: 48px;
+    color: #616060;
+    font-weight: 400;
+  }
 .textoD{
     background-color: blue;
     margin-top: 0px;
@@ -20,10 +70,4 @@
     width: 99vh;
     margin-right: 0%;
     margin-left: 0%;
-}
-
-app-footer{
-    background-color: aqua;
-    position: absolute;
-    width: 197vh;
 }

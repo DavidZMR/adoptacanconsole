@@ -1,0 +1,19 @@
+<h1>Archivo de perros</h1>
+<div class="container">
+    <div class="cards">
+        <div class="card" *ngFor="let perro of perros" style="width: 25rem;">
+            <img class="card-img-top" [src]="perro.foto" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Descripcion</h5>
+              <p class="card-text">{{perro.descripcion}}</p>
+              <h5 class="card-title">Color</h5>
+              <p class="card-text">{{perro.color}}</p>
+              <h5 class="card-title">Talla y tamaño</h5>
+              <p class="card-text">{{perro.descripcion}} con {{perro.tam}} cm de altura</p>
+              <h5 class="card-title">Estado</h5>
+              <p class="card-text">{{perro.status}}</p>
+              <a href="#" *ngIf="perro.status !== 'adopcion' "class="btn btn-primary">Ver detalle</a>
+            </div>
+        </div>
+    </div>
+</div>

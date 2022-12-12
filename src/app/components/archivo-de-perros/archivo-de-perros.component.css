@@ -1,0 +1,31 @@
+.cards {
+    margin-top: 11vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "card card card";
+    
+}
+.card{
+    margin-top: 2vmax;
+}
+h1 {
+    position: absolute;
+    width: 45vmax;
+    height: 2vmax;
+    margin-left: 3vmax;
+    margin-top: 1vmax;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vh;
+    line-height: 3.8vh;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #242338;
+}

@@ -11,10 +11,10 @@ export class MenuComponent implements OnInit {
 
   currentUrl = '';
   routes = SideNavContent;
+  titulo: string;
 
   constructor(
-    private router: Router
-  ) { }
+    private router: Router  ) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(res => {
@@ -30,4 +30,8 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/home'],{replaceUrl: true});
   }
 
+  close(){
+    sessionStorage.clear()
+    localStorage.clear()
+  }
 }

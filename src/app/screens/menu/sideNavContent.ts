@@ -15,15 +15,15 @@ export const SideNavContent: SideNavContent[] = [
         url: '/menu',
         children:[
             {
-                label: 'Inicio',
-                url: 'home',
-                icon: '../../../assets/icons/home-2.png'
-            },
-            {
                 label: 'Registrar perros',
                 url: 'registrar-perros',
                 icon: '../../../assets/icons/folder-2.png'
             },
+            // {
+            //     label: 'Solicitudes de perreras',
+            //     url: 'solicitudes-de-perreras',
+            //     icon: '../../../assets/icons/folder-2.png'
+            // },
             {
                 label: 'Solicitudes de adopcion',
                 url: 'solicitudes-adopcion',
@@ -31,7 +31,7 @@ export const SideNavContent: SideNavContent[] = [
             },
             {
                 label: 'Reportes de perros',
-                url: 'reportes-perros',
+                url: 'reportes-de-perros',
                 icon: '../../../assets/icons/folder-2.png'
             },
             {
@@ -41,7 +41,7 @@ export const SideNavContent: SideNavContent[] = [
             },
             {
                 label: 'Archivo de perros',
-                url: 'archivo-perros',
+                url: 'archivo-de-perros',
                 icon: '../../../assets/icons/folder-2.png'
             },
             

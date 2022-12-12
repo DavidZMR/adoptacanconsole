@@ -1,0 +1,17 @@
+<h1>Reportes de perros</h1>
+<div class="container">
+    <div class="cards">
+        <div class="card" *ngFor="let reporte of reportes" style="width: 25rem;">
+            <img class="card-img-top" [src]="reporte.foto" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Descripcion</h5>
+              <p class="card-text">{{reporte.descripcion}}</p>
+              <p class="card-text">Numero de perros: <small>{{reporte.numeroPerros}}</small></p>
+              <p class="card-text">Ubicacion: <small>{{reporte.direccion}}</small></p>
+              <p class="card-text">Fecha: <small>{{reporte.fecha}}</small></p>
+              <a (click)="atender(reporte.id)" class="btn btn-primary">Atender</a>
+              <a (click)="eliminar(reporte.id)" class="btn btn-danger">Eliminar</a>
+            </div>
+        </div>
+    </div>
+</div>

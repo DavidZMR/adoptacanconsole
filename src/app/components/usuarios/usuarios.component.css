@@ -1,0 +1,427 @@
+h1 {
+    position: absolute;
+    width: 45vmax;
+    height: 2vmax;
+    margin-left: 3vmax;
+    margin-top: 1vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vh;
+    line-height: 3.8vh;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #242338;
+}
+.contenedor{
+    width: 100%;
+}
+.botones{
+    margin-top: 13.3vh;
+    margin-left: 4.08vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+::placeholder {
+    position: absolute;
+    width: 11.55vmax;
+    height: 0.95vmax;
+    left: 1.5vmax;
+    top: 0.95vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85vmax;
+    line-height: 0.85vmax;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.logout{
+    margin-top: 2%;
+    margin-left: 89.5%;
+    height: 2.2%;
+    width: 4.45%;
+    position: absolute;
+    cursor: pointer;
+}
+.borde {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    min-width: 73.79vmax;
+    height: 0.4vmax;
+    left: 2.9vmax;
+    top: calc(45% - 1vh/2 - 19.1vh);
+
+    background: linear-gradient(90deg, #97BE17 32.39%, #D60435 48.79%, #01ABA8 66.51%, #F5B400 83.02%);
+    border: 1px solid #E2E2E2;
+    border-radius: 10px 10px 0px 0px;
+}
+.tabla{
+    border: 1px solid #E2E2E2;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    min-width: 73.79vmax;
+    top: 25.4vh;
+    left: 3.7%;
+    min-height: 240px;
+    
+}
+
+.table{
+    min-width: 70vmax;
+    height: 15vmax;    
+}
+tr{
+    width: 14.76vmax;
+    height: 2.2vmax;
+    align-items: center;
+    text-align: center;
+}
+th{
+    text-align: start;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+    line-height: 2.5vh;
+    color: #242338;
+} 
+td{
+    text-align: start;
+    
+}
+td p{
+    margin-bottom: 0%;
+    margin-left: 0.72vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.65vmax;
+    color: #242338;
+}
+.opciones{
+    margin-bottom: 0%;
+    margin-left: 1.45vmax;
+    line-height: 1.65vmax;
+    height: 1.39vmax;
+    width: 1.39vmax;
+    cursor: pointer;
+}
+.opcionesTd{
+    width: 11vmax;
+}
+.paginas{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25.1vmax;
+    height: 1.5vmax;
+    left: 27.04vmax;
+    margin-top: 5%;
+    padding-top: 0vmax;
+}
+.numeros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.numero {
+    width: 0.45vmax;
+    height: 1.5vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vmax;
+    line-height: 1.5vmax;
+    margin-left: 3.5vmax;
+    margin-bottom: 0vmax;
+    cursor: pointer;
+
+    color: #242338;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.siguiente{
+    margin-left: 3vmax;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    cursor: pointer;
+}
+.anterior{
+    width: 1.5vmax;
+    height: 1.5vmax;
+    cursor: pointer;
+}
+.flechasAntSig{
+    width: 1.5vmax;
+    height: 1.5vmax;
+}
+.ultimo{
+    border-bottom: none;
+}
+.flechitas{
+    top: 0vh;
+    position: relative;
+    width: 0.76vh;
+    height: 1.51vh;
+}
+::placeholder {
+    position: absolute;
+    width: 11.55vmax;
+    height: 0.95vmax;
+    left: 1.5vmax;
+    top: 0.95vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85vmax;
+    line-height: 0.85vmax;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.activo {
+    position: relative;
+    width: 6.5vmax;
+    height: 1.5vmax;
+    left: 0px;
+    top: 0px;
+
+    background:  rgba(151, 190, 23, 0.2);
+    border-radius: 50px;
+}
+.inactivo {
+    position: relative;
+    width: 6.5vmax;
+    height: 1.5vmax;
+    left: 0px;
+    top: 0px;
+    background: rgba(1, 171, 168, 0.2);
+    border-radius: 50px;
+}
+.baja {
+    position: relative;
+    width: 6.5vmax;
+    height: 1.5vmax;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+.pendiente{
+    position: relative;
+    width: 6.5vmax;
+    height: 1.5vmax;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(245, 180, 0, 0.2);
+    border-radius: 50px;
+}
+.activo p {
+    margin-left: 2vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.5vmax;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #97BE17;
+}
+.inactivo p {
+    margin-left: 1.8vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.5vmax;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #01ABA8;}
+.pendiente p{
+    margin-left: 1.3vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.5vmax;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #F5B400;
+}
+.baja p {
+    margin-left: 2.3vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.5vmax;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.9);}
+.cancelado{
+    position: relative;
+    width: 6.5vmax;
+    height: 1.5vmax;
+    left: 0px;
+    top: 0px;
+    background: rgba(208, 8, 56, 0.2);
+    border-radius: 50px;
+}
+.cancelado p{
+    margin-left: 1.2vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vmax;
+    line-height: 1.5vmax;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #D00838;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 1.7vh;
+    pointer-events: none;
+    height: 3vmax;
+    height: 3vmax;
+}
+
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+
+.right-addon input {
+    padding-right: 1.5vmax;
+}
+
+
+.ver {
+    position: absolute;
+    width: 66%;
+    height: 18%;
+    left: 13%;
+    top: 33%;
+    cursor: pointer;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75vmax;
+    line-height: 125%;
+    /* identical to box height, or 18px */
+    text-decoration: none;
+
+    /* Primary Colors/Bupa Navy */
+
+    color: #00335B;
+}
+.eliminar {
+    position: absolute;
+    width: 48%;
+    height: 18%;
+    left: 13%;
+    top: 68%;
+    cursor: pointer;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75vmax;
+    line-height: 125%;
+    /* identical to box height, or 18px */
+    text-decoration: none;
+
+    /* Primary Colors/Bupa Navy */
+
+    color: #00335B;
+}
+.linea{
+    position: absolute;
+    width: 90%;
+    height: 0px;
+    left: 5%;
+    top: 35%;
+
+    border: 1px solid #DDE1E6;
+}
+.linea1 {
+    position: absolute;
+    width: 90%;
+    height: 0px;
+    left: 5%;
+    top: 70%;
+
+    border: 1px solid #DDE1E6;
+}
+.dialog {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 120vh;
+    width: 24vh;
+    height: 15vh;
+    background: #FDFEFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+
+
+.spinner {
+    position: absolute;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 4vh;
+    height: 4vh;
+    margin-left: 35vmax;
+    margin-top: 10vmax;
+    border-radius: 50%;
+    border-left-color: #09f;
+
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
