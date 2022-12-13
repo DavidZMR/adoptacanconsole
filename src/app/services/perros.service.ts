@@ -4,6 +4,8 @@ import { Response } from "../models/Response";
 import { environment } from 'src/environments/environment';
 import { ReportsModel } from '../models/Reports';
 import { PerrosModel } from '../models/PerrosModel';
+import { SolicitudesModel } from '../models/SolicitudesModel';
+import { UsuariosModel } from '../models/UsuariosModel';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -45,5 +47,12 @@ export class PerrosService {
   }
   getArchivoPerros(){
     return this.http.get<Response<PerrosModel[]>>(`${environment.apisUrl}/perros/getArchivoPerros`);
+  }
+  getSolicitudesAdopcion(){
+    return this.http.get<Response<SolicitudesModel[]>>(`${environment.apisUrl}/perros/getSolicitudesAdopcion`);
+  }
+  
+  setCita(data: any){
+    return this.http.post<Response<any>>(`${environment.apisUrl}/perros/setCita`,data);
   }
 }

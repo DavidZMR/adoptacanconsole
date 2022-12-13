@@ -30,15 +30,14 @@
                 <div class="col d-flex"> 
                     <label for="correo" class="etiqueta">Perrera </label>
                     <select class="texto2 texto" [(ngModel)]="perrera" [ngModelOptions]="{standalone: true}" name="" id="">
-                        <option value="1">Perrera Municipal</option>
-                        <option value="">Mediana</option>
-                        <option value="">Grande</option>
+                        <option *ngFor="let perre of perreras" value="{{perre.id}}">{{perre.nombres}}</option>
+                        
                     </select>
                 </div>
             
             </div>
             <div class="row">
-                <label for="" class="etiqueta etiqueta3">Descrpcion</label>
+                <label for="" class="etiqueta etiqueta3">Descripcion</label>
                 <input type="text" class="texto" [(ngModel)]="descripcion" [ngModelOptions]="{standalone: true}" placeholder="Descripcion del perro">
             </div>
             

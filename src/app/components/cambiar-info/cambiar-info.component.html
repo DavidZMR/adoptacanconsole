@@ -1,0 +1,35 @@
+<div class="contenedor d-flex">
+    <h1>Registrar Perros</h1>
+    
+    <div class="borde"></div>
+    <div class="tabla">
+        <form action="">
+            <div class="row d-flex">
+                <label for="" class="etiqueta etiqueta3">Nombre</label>
+                <input type="text" class="texto" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" >
+            </div>
+            <div class="row d-flex">
+                <label for="" class="etiqueta etiqueta3">Direccion</label>
+                <input type="text" class="texto" [(ngModel)]="direccion" [ngModelOptions]="{standalone: true}" >
+            </div>
+            
+            <div class="row">
+                <label for="" class="etiqueta etiqueta3">Telefono</label>
+                <input type="email" class="texto" [(ngModel)]="telefono" [ngModelOptions]="{standalone: true}" >
+            </div>
+            <div class="row">
+                <label for="" class="etiqueta etiqueta3">Correo</label>
+                <input type="email" class="texto" [(ngModel)]="correo" [ngModelOptions]="{standalone: true}" >
+            </div>
+            
+            
+        </form>
+    </div>
+    <div class="abajo">
+        <div class="botones d-flex" >
+            <div >
+                <button class="agregar" (click)="cambiar()">cambiar</button>
+            </div>
+        </div>
+    </div>   
+</div>

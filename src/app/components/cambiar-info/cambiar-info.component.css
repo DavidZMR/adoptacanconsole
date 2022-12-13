@@ -1,0 +1,258 @@
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    position: absolute;
+    width: 45vmax;
+    height: 2vmax;
+    margin-left: 3vmax;
+    margin-top: 1vmax;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vh;
+    line-height: 3.8vh;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #242338;
+}
+
+.arriba {
+    margin-top: 13.3vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.borde {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    min-width: 73.79vmax;
+    height: 0.4vmax;
+    left: 2.9vmax;
+    top: calc(35% - 1vh/2 - 19.1vh);
+
+    background: linear-gradient(90deg, #97BE17 32.39%, #D60435 48.79%, #01ABA8 66.51%, #F5B400 83.02%);
+    border: 1px solid #E2E2E2;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tabla {
+    border: 1px solid #E2E2E2;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    min-width: 73.79vmax;
+    min-height: 99vh;
+    top: 15.5vh;
+    left: 3.7%;
+    min-height: 240px;
+    padding: 5vh;
+
+}
+
+.etiqueta {
+    position: relative;
+    width: 17vh;
+    height: 2vh;
+    margin-top: 2vh;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7vh;
+    line-height: 20px;
+
+    color: #242338;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.etiqueta2 {
+    width: 16vh;
+    margin-left: 4vh;
+}
+
+.etiqueta3 {
+    position: relative;
+    width: 0vh;
+}
+
+.texto {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 19px;
+    gap: 86px;
+    margin-left: 16vh;
+
+    width: 82%;
+
+
+
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7vh;
+
+
+    color: #242338;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.texto2 {
+    width: 62%;
+    margin-left: 1vh;
+
+}
+
+.texto3 {
+    width: 120%;
+    margin-left: 0.5vh;
+}
+
+.texto4 {
+    width: 157%;
+    margin-left: 0.5vh;
+}
+
+.opcion1 {
+    position: absolute;
+    width: 11.55vmax;
+    height: 0.95vmax;
+    left: 1.5vmax;
+    top: 0.95vmax;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85vmax;
+    line-height: 0.85vmax;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    margin-top: 2vmax;
+}
+
+
+
+.botones {
+    position: absolute;
+    height: 7vh;
+    left: 53vmax;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+.agregar {
+    width: 20vmax;
+    height: 7vh;
+    background: #00BEB5;
+    box-shadow: 0px 6px 10px rgba(18, 18, 18, 0.1);
+    border-radius: 50px;
+    border: none;
+
+    margin-bottom: 5vh;
+
+    color: #FFFFFF;
+}
+
+
+::placeholder {
+    position: absolute;
+
+    top: 36%;
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7vh;
+    /* identical to box height */
+
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.abajo {
+    align-self: flex-start;
+    position: absolute;
+    width: 100%;
+    height: 1.5vmax;
+    left: 0vmax;
+    margin-top: 80vh;
+    padding-top: 0vmax;
+}
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 1.7vh;
+    pointer-events: none;
+    height: 3vmax;
+    height: 3vmax;
+}
+
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+
+.right-addon input {
+    padding-right: 1.5vmax;
+}
+.inputFile{
+    width: 0;
+    height: 0;
+}
+.custom-file-button input[type=file] {
+    margin-left: -2px !important;
+    
+}
+
+.custom-file-button input[type=file]::-webkit-file-upload-button {
+    display: none;
+}
+
+.custom-file-button input[type=file]::file-selector-button {
+    display: none;
+}
+
+.custom-file-button:hover label {
+    background-color: #dde0e3;
+    cursor: pointer;
+}

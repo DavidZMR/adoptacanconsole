@@ -44,6 +44,16 @@ export const SideNavContent: SideNavContent[] = [
                 url: 'archivo-de-perros',
                 icon: '../../../assets/icons/folder-2.png'
             },
+            {
+                label: 'Cambiar Info',
+                url: 'cambiar-info',
+                icon: '../../../assets/icons/folder-2.png'
+            },
+            {
+                label: 'cerrar sesion',
+                url: '',
+                icon: '../../../assets/icons/folder-2.png'
+            },
             
         ]
 

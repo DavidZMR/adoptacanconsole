@@ -23,4 +23,16 @@ export class UsuariosService {
   changeStatus(data: any){
     return this.http.put<Response<any>>(`${environment.apisUrl}/user/changeStatus`,data);
   }
+  registerPerrera(data: any){
+    return this.http.post<Response<any>>(`${environment.apisUrl}/user/registerPerrera`,data);
+  }
+  getListaPerrera(){
+    return this.http.get<Response<UsuariosModel[]>>(`${environment.apisUrl}/user/getListaPerrera`);
+  }
+  getDatos(id: any){
+    return this.http.get<Response<UsuariosModel>>(`${environment.apisUrl}/user/getDatos/`+id);
+  }
+  changeDatos(data: any){
+    return this.http.put<Response<any>>(`${environment.apisUrl}/user/changeDatos`,data);
+  }
 }

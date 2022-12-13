@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArchivoDePerrosComponent } from './components/archivo-de-perros/archivo-de-perros.component';
+import { CambiarInfoComponent } from './components/cambiar-info/cambiar-info.component';
 import { RegistrarPerrosComponent } from './components/registrar-perros/registrar-perros.component';
 import { ReportesDePerrosComponent } from './components/reportes-de-perros/reportes-de-perros.component';
 import { SolicitudesAdopcionComponent } from './components/solicitudes-adopcion/solicitudes-adopcion.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
     {path: 'solicitudes-de-perreras', component: SolicitudesDePerrerasComponent},
     {path: 'reportes-de-perros', component: ReportesDePerrosComponent},
     {path: 'usuarios', component: UsuariosComponent},
-    {path: 'archivo-de-perros', component: ArchivoDePerrosComponent}
+    {path: 'archivo-de-perros', component: ArchivoDePerrosComponent},
+    {path: 'cambiar-info', component: CambiarInfoComponent}
   ]}
 ];
 

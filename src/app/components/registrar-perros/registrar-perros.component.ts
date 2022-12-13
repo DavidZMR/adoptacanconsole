@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PerrosService } from 'src/app/services/perros.service';
+import { UsuariosService } from 'src/app/services/usuarios.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -12,10 +13,11 @@ export class RegistrarPerrosComponent implements OnInit {
 
   constructor(
     private perrosService:PerrosService,
-    private router: Router
+    private router: Router,
+    private userService: UsuariosService
   ) { }
   id = localStorage.getItem('id')
-  
+  perreras: any
   foto: any;
   nombre: string;
   color: string;
@@ -24,6 +26,16 @@ export class RegistrarPerrosComponent implements OnInit {
   perrera: number;
   descripcion: number;
   ngOnInit(): void {
+    this.userService.getListaPerrera().subscribe((res)=>{
+      if(res.intResponse === 200){
+        this.perreras = res.Result
+        this.perreras = this.perreras.perreras
+        console.log(this.perreras)
+      }else{
+        Swal.fire('Error', 'No fue posible cargar perreras', 'error');
+
+      }
+    })
   }
 
   handleUpload(event: any) {

@@ -1,17 +1,19 @@
 <div class="contenedor">
     
     <div class="menu">
-        <img  class="backmenu">
+        <img  class="backmenu" >
         <img src="../../../assets/images/Rene logoMesa de trabajo 2.png" class="logo">
         <div *ngFor="let route of routes" class="lista">
             <div *ngFor="let subRoutes of route.children">
                 <div class="frame">
                     <img src='{{subRoutes.icon}}' class="icono">
-                    <a [routerLink]="[subRoutes.url]">{{subRoutes.label}}</a>
+                    <a *ngIf="subRoutes.label == 'cerrar sesion'; else elseBlock" href="" (click)="logout()" >{{subRoutes.label}}</a>
+                    <ng-template #elseBlock><a [routerLink]="[subRoutes.url]">{{subRoutes.label}}</a></ng-template>
                 </div>
             </div>
             
         </div>
+        
         
     </div>
     <div class="mostrar">

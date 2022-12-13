@@ -1,16 +1,64 @@
 <h1>Solicitudes de adopcion</h1>
 <div class="container">
     <div class="cards">
-        <div class="card" *ngFor="let carta of cards" style="width: 25rem;">
-            <img class="card-img-top" [src]="carta.img" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">{{carta.nombrePerro}}</h5>
-              <p class="card-text">Solicitante: <br> <small>{{carta.nombreUsuario}}</small></p>
-              <p class="card-text">Fecha: <small>{{carta.fecha}}</small></p>
-              <a href="#">Detalles de usuario</a><br>
-              <a href="#" class="btn btn-primary">Aprobar</a>
-              <a href="#" class="btn btn-primary">Rechazar</a>
-            </div>
+        <div class="card" *ngFor="let solicitud of solicitudes" style="width: 25rem;">
+            <span *ngIf="solicitud.solicitudes[0].idPerrera == idLog">
+              <img class="card-img-top" [src]="solicitud.solicitudes[0].foto" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{solicitud.solicitudes[0].nombre}}</h5>
+                <p class="card-text">Descripcion: <br> <small>{{solicitud.solicitudes[0].descripcion}}</small></p>
+                <p class="card-text">Fecha: <small>{{solicitud.fecha}}</small></p>
+                <a class="btn" (click)="openModal(solicitud.idUsuario, template)">Detalles de usuario</a><br>
+                <button type="button" (click)="setIdModal(solicitud.id, solicitud.idUsuario)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Aprobar
+                </button>
+              
+                <a href="#" class="btn btn-primary">Rechazar</a>
+              </div>
+            </span>
         </div>
     </div>
+    <ng-template #template>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Detalles de usuario</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <h5>Nombre completo</h5> <p>{{nombres}} {{apellidos}}</p>
+            <h5>Edad</h5><p>{{edad}}</p>
+            <h5>Direccion</h5><p>{{direccion}}</p>
+            <h5>Correo </h5><p>{{correo}}</p>
+            <h5>Tipo</h5><p>{{tipo}}</p>
+            <h5>Estado</h5><p>{{status}}</p>
+            <h5>Foto</h5><img [src]="foto" alt=""> <br>
+            
+        </div>
+        
+    </ng-template>
+
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Crear cita</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="dia">Dia: </label>
+              <input class="m-2" type="date" name="dia" id=""><br>
+              <label for="hora">Hora: </label>
+              <input class="m-2" type="time" name="hora" id="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" (click)="setCita()">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>

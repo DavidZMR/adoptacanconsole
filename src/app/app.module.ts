@@ -23,6 +23,7 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { ArchivoDePerrosComponent } from './components/archivo-de-perros/archivo-de-perros.component';
 import { ContactoComponent } from './screens/contacto/contacto.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CambiarInfoComponent } from './components/cambiar-info/cambiar-info.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     UsuariosComponent,
     ArchivoDePerrosComponent,
     ContactoComponent,
+    CambiarInfoComponent,
   ],
   imports: [
     BrowserModule,

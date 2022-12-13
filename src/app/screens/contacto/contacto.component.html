@@ -1,57 +1,117 @@
 <app-nav></app-nav>
 <div class="container body">
     <div class="row">
-        <h1>INGENIEROS</h1>
-    </div>
-    <div class="row">
-        <div class="content">
-            <div class="row">
-                <div class="card card0 col-6">
-                    <div class="border">
-                        <h2>Ing. Rene Guerrero</h2>
-                        <div class="icons">
-                            <a href="a"><i class="fa fa-instagram"id="fac"></i></a>
-                            <a href="a"><i class="fa fa-facebook"id="fac"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card1 col-6">
-                    <div class="border">
-                        <h2>Ing. David Zermeño</h2>
-                        <div class="icons">
-                            <a href="a"><i class="fa fa-instagram"id="fac"></i></a>
-                            <a href="a"><i class="fa fa-facebook"id="fac"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col col-12 col-md-9">
+            <h3>Tienes un centro de atencion de animales?
+            </h3>
+            <p>Si tienes una veterinaria, un albergue o estas interesado que una perrera 
+                quiera ser parte de este proyecto ayudando a cuidar perritos o atendiendolos.
+                Contactanos y nosotros nos encargaremos de verificar tus datos.
+            </p>
+        </div>
+        <div class="col col-12 col-md-2" style="display: flex; align-items: center;">
+            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Formulario
+            </button>
         </div>
     </div>
+    <br>
     <div class="row">
-        <h1>PERRITOS QUE NOS ACOMPAÑARON</h1>
-    </div>
-    <div class="row">
-        <div class="content">
-            <div class="row">
-                <div class="card card0 col-6">
-                    <div class="border">
-                        <h2>Kiara</h2>
-                        <div class="icons">
-                            <a href="a"><i class="fa fa-instagram"id="fac"></i></a>
-                            <a href="a"><i class="fa fa-facebook"id="fac"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card1 col-6">
-                    <div class="border">
-                        <h2>Konie</h2>
-                        <div class="icons">
-                            <a href="a"><i class="fa fa-instagram"id="fac"></i></a>
-                            <a href="a"><i class="fa fa-facebook"id="fac"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col col-12 col-md-9">
+            <h3>AdoptaCan tambien recibe donaciones...
+            </h3>
+            <p>
+                Los ingresos de AdoptaCan, son de los anuncios encontrados en la apliacion movil.
+                Sin embargo tambien se tiene una cuenta con la cual se apoya este proyecto y a otros
+                albergues con la misma finalidad, de ayudar a los perros.
+            </p>
+        </div>
+        <div class="col col-12 col-md-2" style="display: flex; align-items: center;">
+            <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#modalDonation">
+                Donacio
+            </button>
         </div>
     </div>
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario Centro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-6">
+                        <img src="../../../assets/images/dogForm.png" width="100%" height="80%">
+                    </div>
+                    <div class="col col-6">
+                            <!-- Nombre -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                                <input type="text" [(ngModel)]="nombre" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            <!-- Email -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                                <input type="text" class="form-control" [(ngModel)]="correo" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            <!-- Direccion -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Direccion del lugar</span>
+                                <input type="text" class="form-control" [(ngModel)]="direccion" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            <!-- Telefono -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Telefono del lugar</span>
+                                <input type="text" class="form-control" [(ngModel)]="telefono" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            <!-- Cotnraseña -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Contraseña</span>
+                                <input type="password" class="form-control" [(ngModel)]="password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <!-- Contraseña Rep -->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Repetir Con.</span>
+                                <input type="password" class="form-control" [(ngModel)]="password2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div> 
+                              <div>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" (click)="registrar()">Registrar</button> 
+                              </div>           
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modalDonation" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Donativo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body row fondoDon">
+          <div class="col col-6">
+            <img src="../../../assets/images/creditCard.png" width="100%">
+          </div>
+          <div class="col col-6" style="text-align: center;">
+            <h2>Banco:</h2><h3>BBVA</h3>
+            <h2>Cuenta:</h2><h3>158 953 7097</h3>
+            <h2>claBe:</h2><h3>012 180 01589537097 4</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

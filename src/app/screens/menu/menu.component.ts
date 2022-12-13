@@ -33,5 +33,6 @@ export class MenuComponent implements OnInit {
   close(){
     sessionStorage.clear()
     localStorage.clear()
+    this.router.navigate(['/home'],{replaceUrl: true});
   }
 }
